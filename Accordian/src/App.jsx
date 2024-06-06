@@ -2,6 +2,7 @@
 import './App.css'
 import StarRating from './StarRating/StarRating'
 import Accordian from './components/Accordian/Accordian'
+import ImageSlider from './components/ImageSlider/ImageSlider'
 import RandomColor from './components/RandomColor/RandomColor'
 
 function App() {
@@ -10,15 +11,10 @@ function App() {
   return (
     <>
     {/* <RandomColor/> */}
-    <div style={ {
-      height: '100vh',
-      width: '100vw',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-    <StarRating noOfStars={18}/>
-    </div>
+    
+    {/* <StarRating noOfStars={18}/> */}
+
+    <ImageSlider url={"https://picsum.photos/v2/list"} limit = {"10"}/>
     </>
   )
 }
